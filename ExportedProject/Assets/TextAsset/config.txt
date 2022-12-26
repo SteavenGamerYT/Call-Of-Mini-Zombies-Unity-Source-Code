@@ -1,0 +1,2895 @@
+<Config>
+
+  <Global startMoney ="3000" enemyLimit = "8" resolution = "1"/>
+  
+  <Player hp="100" walkSpeed="7" armorPrice="10000" upPriceFactor="1" maxArmorLevel ="10"/>
+
+  <WeaponAutoRect width="40" height="40"/>
+  <EndlessPara a1="0.2" b1="0.6" a2="0.2" b2="0.6" cash="1.2"/>
+  <Hunting hp="90.0" damage="8.0" runspeed="1.8" time="90.0" level="20"/>
+  
+  <Avatars>
+    <Avatar name="Plumer" price="80000" />
+    <Avatar name="Nerd" price="40000" />
+    <Avatar name="Doctor" price="100000" />
+    <Avatar name="Cowboy" price="80000" />
+    <Avatar name="Swat" price="120000" />
+    <Avatar name="Marine" price="120000" />
+    <Avatar name="EnegyArmor" price="750000" />
+    <Avatar name="Pirate" price="600000"/>
+    <Avatar name="Ninja" price="400000"/>
+    <Avatar name="Pastor" price="600000"/>
+    <Avatar name="Eskimo" price="722500"/>
+  </Avatars>
+
+  <Monsters>
+    <Monster name="Zombie" damage="5" attackRate="3.0" walkSpeed="2.8" hp="13" score="120" lootCash="100"/>
+    <Monster name="Nurse" damage="8" attackRate="4.5" walkSpeed="2.8" hp="10" score="150" lootCash="120"/>
+    <Monster name="Tank" damage="20" attackRate="3.0" walkSpeed="5" hp="200" rushSpeed="13" rushDamage="30" rushAttack="15" rushRate="6" score="1200" lootCash="1000"/>
+    <Monster name="Hunter" damage="8" attackRate="2" walkSpeed="12" hp="65" rushDamage="20" score="300" lootCash="250"/>
+    <Monster name="Boomer" damage="30" attackRate="1" walkSpeed="4.5" hp="8" score="120" lootCash="80"/>
+    <Monster name="Swat" damage="20" attackRate="4" walkSpeed="4" hp="20" score="200" lootCash="150"/>
+    <Monster name="Dog" damage="8" attackRate="2" walkSpeed="3.5" hp="25" score="250" lootCash="180"/>
+    <Monster name="Police" damage="15" attackRate="1.5" walkSpeed="3" hp="35" score="400" lootCash="180"/>
+    <Monster name="HellFirer" damage="15" attackRate="1.5" walkSpeed="3" hp="35" score="400" lootCash="180"/>
+  </Monsters>
+
+  <MulitiAchievement>
+    
+    <Achievement type="TypeKill" name="MULTIPLE TRAUMA" content="KILL 20 NURSES IN 1 CO-OP BATTLE." class="Nurse Kill Easy" level="1" iconbk="tong" icon="hz1_1">
+      <A_Monster type="1" count="20"/>
+      <A_Reward cash="0" avata="3" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="FLATLINING" content="KILL 50 NURSES IN 1 CO-OP BATTLE." class="Nurse Kill Easy" level="2" iconbk="yin" icon="hz1_2">
+      <A_Monster type="1" count="50"/>
+      <A_Reward cash="50000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="MEDICAL MALPRACTICE" content="KILL 100 NURSES IN 1 CO-OP BATTLE." class="Nurse Kill Easy" level="3" iconbk="jin" icon="hz1_3">
+      <A_Monster type="1" count="100"/>
+      <A_Reward cash="100000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="MULTIPLE ZOMBICIDE" content="KILL 20 COPS IN 1 CO-OP BATTLE." class="Police Kill Easy" level="1" iconbk="tong" icon="hz2_1">
+      <A_Monster type="7" count="20"/>
+      <A_Reward cash="0" avata="-1" weapon="M4"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="SERIAL KILLER" content="KILL 50 COPS IN 1 CO-OP BATTLE." class="Police Kill Easy" level="2" iconbk="yin" icon="hz2_2">
+      <A_Monster type="7" count="50"/>
+      <A_Reward cash="50000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="ZOMBIE ENEMY NO. 1" content="KILL 100 COPS IN 1 CO-OP BATTLE." class="Police Kill Easy" level="3" iconbk="jin" icon="hz2_3">
+      <A_Monster type="7" count="100"/>
+      <A_Reward cash="100000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="NOT A DOG PERSON" content="KILL 20 DOGS IN 1 CO-OP BATTLE." class="DOG Kill Easy" level="1" iconbk="tong" icon="hz3_1">
+      <A_Monster type="6" count="20"/>
+      <A_Reward cash="0" avata="2" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="DOG CATCHER" content="KILL 50 DOGS IN 1 CO-OP BATTLE." class="DOG Kill Easy" level="2" iconbk="yin" icon="hz3_2">
+      <A_Monster type="6" count="50"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="FULL MOON" content="KILL 100 DOGS IN 1 CO-OP BATTLE." class="DOG Kill Easy" level="3" iconbk="jin" icon="hz3_3">
+      <A_Monster type="6" count="100"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="FIRE IN THE HOLE" content="KILL 20 SWAT ZOMBIES IN 1 CO-OP BATTLE." class="SWAT Kill Easy" level="1" iconbk="tong" icon="hz4_1">
+      <A_Monster type="5" count="20"/>
+      <A_Reward cash="0" avata="1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="GRENADE DIFFUSER" content="KILL 50 SWAT ZOMBIES IN 1 CO-OP BATTLE." class="SWAT Kill Easy" level="2" iconbk="yin" icon="hz4_2">
+      <A_Monster type="5" count="50"/>
+      <A_Reward cash="100000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TypeKill" name="ANTI SWAT MASTER" content="KILL 100 SWAT ZOMBIES IN 1 CO-OP BATTLE." class="SWAT Kill Easy" level="3" iconbk="jin" icon="hz4_3">
+      <A_Monster type="5" count="100"/>
+      <A_Reward cash="150000" avata="-1" weapon="none"/>
+    </Achievement>
+
+	<Achievement type="EliteTypeKill" name="ELITE SLAYER" content="KILL 10 ELITE ZOMBIES IN 1 CO-OP BATTLE." class="Elite Total Kill" level="1" iconbk="tong" icon="hz5_1">
+      <A_Monster type="-1" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="EliteTypeKill" name="ELITE GRINDER" content="KILL 20 ELITE ZOMBIES IN 1 CO-OP BATTLE." class="Elite Total Kill" level="2" iconbk="yin" icon="hz5_2">
+      <A_Monster type="-1" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="EliteTypeKill" name="ELITE TERMINATOR" content="KILL 30 ELITE ZOMBIES IN 1 CO-OP BATTLE." class="Elite Total Kill" level="3" iconbk="jin" icon="hz5_3">
+      <A_Monster type="-1" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="COP SLAYER" content="KILL 10 COPS IN A ROW IN 1 CO-OP BATTLE." class="CopsCombo" level="1" iconbk="tong" icon="hz6_1">
+      <A_Monster type="7" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="COP GRINDER" content="KILL 20 COPS IN A ROW IN 1 CO-OP BATTLE." class="CopsCombo" level="2" iconbk="yin" icon="hz6_2">
+      <A_Monster type="7" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="COP TERMINATOR" content="KILL 30 COPS IN A ROW IN 1 CO-OP BATTLE." class="CopsCombo" level="3" iconbk="jin" icon="hz6_3">
+      <A_Monster type="7" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+	
+    <Achievement type="Damage" name="ANNIHILATOR" content="INFLICT 100,000 LIFETIME DAMAGE." class="Total Damage" level="1" iconbk="tong" icon="hz7_1">
+      <A_Damage val="100000"/>
+      <A_Reward cash="50000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="Damage" name="NIHILIST" content="INFLICT 300,000 LIFETIME DAMAGE." class="Total Damage" level="2" iconbk="yin" icon="hz7_2">
+      <A_Damage val="300000"/>
+      <A_Reward cash="150000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="Damage" name="LORD OF DESTRUCTION" content="INFLICT 600,000 LIFETIME DAMAGE." class="Total Damage" level="3" iconbk="jin" icon="hz7_3">
+      <A_Damage val="600000"/>
+      <A_Reward cash="300000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="EliteTotalKill" name="LIKE A PRO" content="KILL 1,000 ELITE ZOMBIES." class="Elite Total" level="1" iconbk="tong" icon="hz8_1">
+      <A_Monster type="-1" count="1000"/>
+      <A_Reward cash="0" avata="-1" weapon="AUG"/>
+    </Achievement>
+
+    <Achievement type="EliteTotalKill" name="TERMINATOR" content="KILL 3,000 ELITE ZOMBIES." class="Elite Total" level="2" iconbk="yin" icon="hz8_2">
+      <A_Monster type="-1" count="3000"/>
+      <A_Reward cash="0" avata="5" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="EliteTotalKill" name="GOD OF DEATH" content="KILL 5,000 ELITE ZOMBIES." class="Elite Total" level="3" iconbk="jin" icon="hz8_3">
+      <A_Monster type="-1" count="5000"/>
+      <A_Reward cash="0" avata="-1" weapon="GATLING"/>
+    </Achievement>	
+
+    <Achievement type="ComboKill" name="NURSE SLAYER" content="KILL 10 NURSES IN A ROW IN 1 CO-OP BATTLE." class="NurserCombo" level="1" iconbk="tong" icon="hz9_1">
+      <A_Monster type="1" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="NURSE GRINDER" content="KILL 20 NURSES IN A ROW IN 1 CO-OP BATTLE." class="NurserCombo" level="2" iconbk="yin" icon="hz9_2">
+      <A_Monster type="1" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="NURSE TERMINATOR" content="KILL 30 NURSES IN A ROW IN 1 CO-OP BATTLE." class="NurserCombo" level="3" iconbk="jin" icon="hz9_3">
+      <A_Monster type="1" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="BOMBER SLAYER" content="KILL 10 SUICIDE BOMBERS IN A ROW IN 1 CO-OP \nBATTLE." class="BoomberCombo" level="1" iconbk="tong" icon="hz10_1">
+      <A_Monster type="4" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="BOMBER GRINDER" content="KILL 20 SUICIDE BOMBERS IN A ROW IN 1 CO-OP \nBATTLE." class="BoomberCombo" level="2" iconbk="yin" icon="hz10_2">
+      <A_Monster type="4" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="BOMBER TERMINATOR" content="KILL 30 SUICIDE BOMBERS IN A ROW IN 1 CO-OP \nBATTLE." class="BoomberCombo" level="3" iconbk="jin" icon="hz10_3">
+      <A_Monster type="4" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="SWAT SLAYER" content="KILL 10 SWAT ZOMBIES IN A ROW IN 1 CO-OP \nBATTLE." class="SwatCombo" level="1" iconbk="tong" icon="hz13_1">
+      <A_Monster type="5" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="SWAT GRINDER" content="KILL 20 SWAT ZOMBIES IN A ROW IN 1 CO-OP \nBATTLE." class="SwatCombo" level="2" iconbk="yin" icon="hz13_2">
+      <A_Monster type="5" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="SWAT TERMINATOR" content="KILL 30 SWAT ZOMBIES IN A ROW IN 1 CO-OP \nBATTLE." class="SwatCombo" level="3" iconbk="jin" icon="hz13_3">
+      <A_Monster type="5" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="CANINE SLAYER" content="KILL 10 DOGS IN A ROW IN 1 CO-OP BATTLE." class="DogCombo" level="1" iconbk="tong" icon="hz12_1">
+      <A_Monster type="6" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="CANINE GRINDER" content="KILL 20 DOGS IN A ROW IN 1 CO-OP BATTLE." class="DogCombo" level="2" iconbk="yin" icon="hz12_2">
+      <A_Monster type="6" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="ComboKill" name="CANINE TERMINATOR" content="KILL 30 DOGS IN A ROW IN 1 CO-OP BATTLE." class="DogCombo" level="3" iconbk="jin" icon="hz12_3">
+      <A_Monster type="6" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="GodTime" name="NO SWEAT" content="TAKE NO DAMAGE DURING A 3-MINUTE CO-OP \nBATTLE." class="GodTime" level="1" iconbk="tong" icon="hz11_1">
+      <A_Time val="180"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="GodTime" name="UNTOUCHABLE" content="TAKE NO DAMAGE DURING A 5-MINUTE CO-OP \nBATTLE." class="GodTime" level="2" iconbk="yin" icon="hz11_2">
+      <A_Time val="300"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="GodTime" name="INVINCIBLE" content="TAKE NO DAMAGE DURING A 10-MINUTE CO-OP \nBATTLE." class="GodTime" level="3" iconbk="jin" icon="hz11_3">
+      <A_Time val="600"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>	
+
+    <Achievement type="MultiKill" name="SAMPLER PLATTER" content="KILL 10 EACH OF NURSES, COPS, DOGS, AND \nSUICIDE BOMBERS IN 1 CO-OP BATTLE." class="MultiKill" level="1" iconbk="tong" icon="hz14_1">
+      <A_Monster type="1" count="10"/>
+      <A_Monster type="5" count="10"/>
+      <A_Monster type="6" count="10"/>
+      <A_Monster type="4" count="10"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="MultiKill" name="VARIETY TRAY" content="KILL 20 EACH OF NURSES, COPS, DOGS, AND \nSUICIDE BOMBERS IN 1 CO-OP BATTLE." class="MultiKill" level="2" iconbk="yin" icon="hz14_2">
+      <A_Monster type="1" count="20"/>
+      <A_Monster type="5" count="20"/>
+      <A_Monster type="6" count="20"/>
+      <A_Monster type="4" count="20"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="MultiKill" name="ZOMBIE FEAST" content="KILL 30 EACH OF NURSES, COPS, DOGS, AND \nSUICIDE BOMBERS IN 1 CO-OP BATTLE." class="MultiKill" level="3" iconbk="jin" icon="hz14_3">
+      <A_Monster type="1" count="30"/>
+      <A_Monster type="5" count="30"/>
+      <A_Monster type="6" count="30"/>
+      <A_Monster type="4" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TotalKill" name="AMATEUR ZOMBIE KILLER" content="KILL 5,000 ZOMBIES." class="Tatal Kill Normal" level="1" iconbk="tong" icon="hz15_1">
+      <A_Monster type="-1" count="5000"/>
+      <A_Reward cash="60000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TotalKill" name="PRO ZOMBIE KILLER" content="KILL 10,000 ZOMBIES." class="Tatal Kill Normal" level="2" iconbk="yin" icon="hz15_2">
+      <A_Monster type="-1" count="10000"/>
+      <A_Reward cash="120000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="TotalKill" name="LEGENDARY ZOMBIE KILLER" content="KILL 20,000 ZOMBIES." class="Tatal Kill Normal" level="3" iconbk="jin" icon="hz15_3">
+      <A_Monster type="-1" count="20000"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+	
+    <Achievement type="Time" name="HOLDING ON" content="SURVIVE FOR 5 MINUTES IN 1 CO-OP BATTLE." class="Time" level="1" iconbk="tong" icon="hz16_1">
+      <A_Time val="300"/>
+      <A_Reward cash="80000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="Time" name="SURVIVOR" content="SURVIVE FOR 15 MINUTES IN 1 CO-OP BATTLE." class="Time" level="2" iconbk="yin" icon="hz16_2">
+      <A_Time val="900"/>
+      <A_Reward cash="150000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="Time" name="SURVIVAL MARATHON" content="SURVIVE FOR 30 MINUTES IN 1 CO-OP BATTLE." class="Time" level="3" iconbk="jin" icon="hz16_3">
+      <A_Time val="1800"/>
+      <A_Reward cash="300000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="WeaponKill" name="MEATGRINDER" content="KILL 50 ZOMBIES WITH THE SAW IN 1 CO-OP \nBATTLE." class="Saw Kill" level="1" iconbk="tong" icon="hz17_1">
+      <A_Weapon type="7" count="50"/>
+      <A_Reward cash="0" avata="-1" weapon="XM-1014"/>
+    </Achievement>
+
+    <Achievement type="WeaponKill" name="THE RIPPER" content="KILL 100 ZOMBIES WITH THE SAW IN 1 CO-OP \nBATTLE." class="Saw Kill" level="2" iconbk="yin" icon="hz17_2">
+      <A_Weapon type="7" count="100"/>
+      <A_Reward cash="0" avata="4" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="WeaponKill" name="CHAINSAW MASSACRE" content="KILL 150 ZOMBIES WITH THE SAW IN 1 CO-OP \nBATTLE." class="Saw Kill" level="3" iconbk="jin" icon="hz17_3">
+      <A_Weapon type="7" count="150"/>
+      <A_Reward cash="0" avata="-1" weapon="RPG-7"/>
+    </Achievement>
+
+    <Achievement type="WeaponKill" name="TOASTY" content="KILL 30 ZOMBIES WITH THE FLAMETHROWER IN \n1 CO-OP BATTLE." class="Fire Kill" level="1" iconbk="tong" icon="hz18_1">
+      <A_Weapon type="11" count="30"/>
+      <A_Reward cash="200000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="WeaponKill" name="FIRESTORM" content="KILL 70 ZOMBIES WITH THE FLAMETHROWER IN \n1 CO-OP BATTLE." class="Fire Kill" level="2" iconbk="yin" icon="hz18_2">
+      <A_Weapon type="11" count="70"/>
+      <A_Reward cash="400000" avata="-1" weapon="none"/>
+    </Achievement>
+
+    <Achievement type="WeaponKill" name="HELLFIRE" content="KILL 120 ZOMBIES WITH THE FLAMETHROWER IN \n1 CO-OP BATTLE." class="Fire Kill" level="3" iconbk="jin" icon="hz18_3">
+      <A_Weapon type="11" count="120"/>
+      <A_Reward cash="600000" avata="-1" weapon="M32"/>
+    </Achievement>
+    
+  </MulitiAchievement>
+  
+  <Equipments>
+
+    <Weapon name="MP5" type="Rifle" moveSpeedDrag="1.0" range ="12" price ="10000" bulletPrice="2000" initBullet="800" bullet="200" startEquip = "2">
+      <Damage base="6.5"  upFactor="0.25" basePrice="2500" upPriceFactor="0.5" maxLevel="7" />
+      <Frequency base="0.2"  upFactor="0.13" basePrice="3000" upPriceFactor="0.5" maxLevel="5" />
+      <Accuracy base="70"  upFactor="0.07" basePrice="2500" upPriceFactor="0.55" maxLevel="5" />
+      <Loot giveAtWave="0" fromWave="0" toWave="0" lootRate="1" increaseRate="0.005"/>
+      <VSDamagePara base="12.5" delta="3.928571429"/>
+      <VSFrequencyPara base="0.2" delta="-0.024"/>
+    </Weapon>
+    
+    <Weapon name="P90" type="Rifle" moveSpeedDrag="0.6" range ="13" price ="12000" bulletPrice="2000" initBullet="800" bullet="200" startEquip = "0">
+      <Damage base="7.0"  upFactor="0.25" basePrice="2800" upPriceFactor="0.5" maxLevel="8" />
+      <Frequency base="0.18"  upFactor="0.15" basePrice="3200" upPriceFactor="0.5" maxLevel="4" />
+      <Accuracy base="75"  upFactor="0.07" basePrice="2500" upPriceFactor="0.6" maxLevel="5" />
+      <Loot giveAtWave="2" fromWave="1" toWave="1" lootRate="1" increaseRate="0.005"/>
+      <VSDamagePara base="12.94" delta="4.1325"/>
+      <VSFrequencyPara base="0.18" delta="-0.025"/>	  
+    </Weapon>
+    
+    <Weapon name="M4" type="Rifle" moveSpeedDrag="1.4" range ="16" price ="25000" bulletPrice="2000" initBullet="800" bullet="200" startEquip = "0">
+      <Damage base="8.5"  upFactor="0.26" basePrice="3500" upPriceFactor="0.5" maxLevel="10" />
+      <Frequency base="0.2"  upFactor="0.1" basePrice="3500" upPriceFactor="0.5" maxLevel="5" />
+      <Accuracy base="70"  upFactor="0.07" basePrice="2200" upPriceFactor="0.7" maxLevel="6" />
+      <Loot giveAtWave="6" fromWave="2" toWave="2" lootRate="1" increaseRate="0"/>
+      <VSDamagePara base="15" delta="4.5"/>
+      <VSFrequencyPara base="0.2" delta="-0.02"/>	  	  
+    </Weapon>
+    
+    <Weapon name="AK-47" type="Rifle" moveSpeedDrag="1.6" range ="13" price ="20000" bulletPrice="2000" initBullet="800" bullet="200" startEquip = "0">
+      <Damage base="9.5"  upFactor="0.3" basePrice="4000" upPriceFactor="0.55" maxLevel="8" />
+      <Frequency base="0.25"  upFactor="0.1" basePrice="3800" upPriceFactor="0.5" maxLevel="5" />
+      <Accuracy base="60"  upFactor="0.09" basePrice="2500" upPriceFactor="1.0" maxLevel="4" />
+      <Loot giveAtWave="4" fromWave="6" toWave="6" lootRate="1" increaseRate="0.01"/>
+      <VSDamagePara base="18.75" delta="7.40625"/>
+      <VSFrequencyPara base="0.25" delta="-0.024"/>	 	  
+    </Weapon>
+
+    <Weapon name="AUG" type="Rifle" moveSpeedDrag="1.2" range ="15" price ="30000" bulletPrice="2000" initBullet="800" bullet="200" startEquip = "0">
+      <Damage base="9.0"  upFactor="0.25" basePrice="3700" upPriceFactor="0.5" maxLevel="10" />
+      <Frequency base="0.18"  upFactor="0.15" basePrice="4000" upPriceFactor="0.6" maxLevel="4" />
+      <Accuracy base="75"  upFactor="0.08" basePrice="2800" upPriceFactor="0.9" maxLevel="3" />
+      <Loot giveAtWave="10" fromWave="8" toWave="8" lootRate="1" increaseRate="0.005"/>
+      <VSDamagePara base="14.63" delta="3.737"/>
+      <VSFrequencyPara base="0.18" delta="-0.025"/>	 		  
+    </Weapon>
+
+    <Weapon name="Winchester-1200" type="ShotGun" moveSpeedDrag="1.8" range ="5.0" price ="15000" bulletPrice="2000" initBullet="200" bullet="60" startEquip = "1">
+      <Damage base="20.0"  upFactor="0.3" basePrice="3700" upPriceFactor="0.65" maxLevel="7" />
+      <Frequency base="1.0"  upFactor="0.07" basePrice="2200" upPriceFactor="0.8" maxLevel="6" />
+      <Accuracy base="55"  upFactor="0.1" basePrice="4000" upPriceFactor="0.75" maxLevel="5" />
+      <Loot giveAtWave="0" fromWave="10" toWave="10" lootRate="1" increaseRate="0.005"/>
+      <VSDamagePara base="25" delta="17.85714286"/>
+      <VSFrequencyPara base="1" delta="-0.063333333"/>		  
+    </Weapon>
+    
+    <Weapon name="XM-1014" type="ShotGun" moveSpeedDrag="1.4" range ="6.0" price ="25000" bulletPrice="2000" initBullet="200" bullet="60" startEquip = "0">
+      <Damage base="16.0"  upFactor="0.35" basePrice="3000" upPriceFactor="0.7" maxLevel="8" />
+      <Frequency base="0.85"  upFactor="0.07" basePrice="2500" upPriceFactor="0.8" maxLevel="6" />
+      <Accuracy base="55"  upFactor="0.1" basePrice="3500" upPriceFactor="0.8" maxLevel="6" />
+      <Loot giveAtWave="5" fromWave="12" toWave="12" lootRate="1" increaseRate="0.005"/>
+      <VSDamagePara base="25.5" delta="16.04625"/>
+      <VSFrequencyPara base="0.85" delta="-0.053333333"/>		  
+    </Weapon>
+    
+    <Weapon name="Remington-870" type="ShotGun" moveSpeedDrag="1.5" range ="5.5" price ="40000" bulletPrice="2000" initBullet="200" bullet="60" startEquip = "0">
+      <Damage base="23.0"  upFactor="0.27" basePrice="3500" upPriceFactor="0.65" maxLevel="10" />
+      <Frequency base="1.2"  upFactor="0.08" basePrice="3000" upPriceFactor="0.8" maxLevel="7" />
+      <Accuracy base="50"  upFactor="0.15" basePrice="4200" upPriceFactor="0.8" maxLevel="6" />
+      <Loot giveAtWave="8" fromWave="14" toWave="14" lootRate="1" increaseRate="0.005"/>
+      <VSDamagePara base="39" delta="16.229"/>
+      <VSFrequencyPara base="1.2" delta="-0.08"/>		  
+    </Weapon>
+
+    <Weapon name="Chainsaw" type="Saw" moveSpeedDrag="1" range ="75" price ="5000" bulletPrice="1000" initBullet ="0" bullet="7000" startEquip = "2">
+      <Damage base="15.0"  upFactor="0.3" basePrice="2000" upPriceFactor="0.5" maxLevel="10" />
+      <Frequency base="0.2"  upFactor="0.05" basePrice="4000" upPriceFactor="0.5" maxLevel="0" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="3000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="14" fromWave="16" toWave="16" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="13" delta="6.2"/>
+      <VSFrequencyPara base="0.2" delta="0"/>		  
+    </Weapon>
+
+    <Weapon name="Gatling" type="MachineGun" moveSpeedDrag="3.0" range ="20" price ="100000" bulletPrice="4000" initBullet="800" bullet="320" startEquip = "0">
+      <Damage base="13.0"  upFactor="0.3" basePrice="5000" upPriceFactor="0.6" maxLevel="10" />
+      <Frequency base="0.12"  upFactor="0.18" basePrice="8000" upPriceFactor="2.0" maxLevel="3" />
+      <Accuracy base="50"  upFactor="0.08" basePrice="5500" upPriceFactor="0.5" maxLevel="5" />
+      <Loot giveAtWave="13" fromWave="18" toWave="18" lootRate="1" increaseRate="0.002"/>
+      <VSDamagePara base="14.29" delta="3.571"/>
+      <VSFrequencyPara base="0.12" delta="-0.023333333"/>	 		  
+    </Weapon>
+
+    <Weapon name="RPG-7" type="RPG" moveSpeedDrag="3.0" range ="9" price ="200000" bulletPrice="7000" initBullet="100" bullet="28" flySpeed="50" startEquip = "0">
+      <Damage base="150.0"  upFactor="0.3" basePrice="10000" upPriceFactor="1" maxLevel="8" />
+      <Frequency base="1.8"  upFactor="0.12" basePrice="10000" upPriceFactor="1.0" maxLevel="6" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="8000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="15" fromWave="20" toWave="20" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="70" delta="43.75"/>
+      <VSFrequencyPara base="2.5" delta="-0.116666667"/>	 	  
+    </Weapon>
+
+    <Weapon name="Laser" type="Laser" moveSpeedDrag="1.3" range ="200" price ="350000" bulletPrice="7000" initBullet="1200" bullet="400" flySpeed="0" startEquip = "0">
+      <Damage base="10.0"  upFactor="0.25" basePrice="12000" upPriceFactor="0.8" maxLevel="10" />
+      <Frequency base="0.1"  upFactor="0.05" basePrice="7000" upPriceFactor="0.5" maxLevel="0" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="8000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="20" fromWave="22" toWave="22" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="4" delta="2"/>
+      <VSFrequencyPara base="0.1" delta="0"/>	  
+    </Weapon>
+
+    <Weapon name="PGM" type="Sniper" moveSpeedDrag="2.6" range ="5" price ="800000" bulletPrice="9000" initBullet="300" bullet="60" flySpeed="18" startEquip = "1">
+      <Damage base="60.0"  upFactor="0.5" basePrice="15000" upPriceFactor="0.8" maxLevel="10" />
+      <Frequency base="0.6"  upFactor="0.1" basePrice="10000" upPriceFactor="0.5" maxLevel="10" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="8000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="0" fromWave="24" toWave="24" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="50" delta="25"/>
+      <VSFrequencyPara base="2" delta="-0.05"/>	  
+    </Weapon>
+
+    <Weapon name="LightSword" type="Sword" moveSpeedDrag="1" range ="75" price ="550000" bulletPrice="10000" initBullet ="0" bullet="7000" flySpeed="18" startEquip = "0">
+      <Damage base="20.0"  upFactor="0.4" basePrice="8000" upPriceFactor="0.8" maxLevel="10" />
+      <Frequency base="0.1"  upFactor="0.05" basePrice="4000" upPriceFactor="0.5" maxLevel="0" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="3000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="18" fromWave="16" toWave="16" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="8.33" delta="4.167"/>
+      <VSFrequencyPara base="0.1" delta="0"/>	  
+    </Weapon>
+
+    <Weapon name="M32" type="M32" moveSpeedDrag="3.0" range ="3.5" price ="990000" bulletPrice="12000" initBullet="400" bullet="100" flySpeed="20" startEquip = "0">
+      <Damage base="40.0"  upFactor="0.7" basePrice="10000" upPriceFactor="1" maxLevel="10" />
+      <Frequency base="0.8"  upFactor="0.12" basePrice="12000" upPriceFactor="0.7" maxLevel="10" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="8000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="22" fromWave="20" toWave="20" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="50" delta="25"/>
+      <VSFrequencyPara base="2" delta="-0.1"/>
+    </Weapon>
+    
+    <Weapon name="HellFire" type="HellFire" moveSpeedDrag="1.5" range ="3.5" price ="2999999" bulletPrice="1200000" initBullet="200" bullet="100" flySpeed="0" startEquip = "0">
+      <Damage base="80.0"  upFactor="0.7" basePrice="100000" upPriceFactor="1" maxLevel="10" />
+      <Frequency base="0.1"  upFactor="0.1" basePrice="12000" upPriceFactor="0.7" maxLevel="0" />
+      <Accuracy base="100"  upFactor="0.05" basePrice="8000" upPriceFactor="0.5" maxLevel="0" />
+      <Loot giveAtWave="9999" fromWave="9999" toWave="9999" lootRate="1" increaseRate="0.001"/>
+      <VSDamagePara base="6.67" delta="3.333"/>
+      <VSFrequencyPara base="0.1" delta="0"/>		  
+    </Weapon>  
+
+    <Equip name="SpeedShoes" effect="speed" value="1" >
+      <LootEquip giveAtWave="0" fromWave="10" toWave="20" lootRate="0.5" increaseRate="0.001"/>
+    </Equip>
+  </Equipments>
+
+
+
+  <Items>
+    <Item name ="Health" effect="hp" value="150"/>
+    <Item name ="Power" effect="damage" value="5"/>
+    <Item name ="Gold" effect="cash" value="300"/>
+  </Items>
+  
+  <EnemySpawns>
+
+    <Endless name ="Endless normal">      
+      <Wave intermission="1">
+
+        <Round intermission="1">          
+          <Enemy id="zombie" count ="2" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+		      <Enemy id="dog" count ="3" from ="grave"/>
+		      <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="1">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		      <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="1">
+          <Enemy id="boomer" count ="3" from ="grave"/>
+        </Round>
+     
+	    <Round intermission="1">
+          <Enemy id="dog" count ="5" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+          </Round>
+		  
+		<Round intermission="1">
+          <Enemy id="swat" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+        </Round>
+		 
+        <Round intermission="1">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		      <Enemy id="dog" count ="3" from ="door"/>
+		      <Enemy id="police" count ="2" from ="door"/>
+		 </Round>
+		 
+        <Round intermission="1">
+          <Enemy id="dog" count ="4" from ="grave"/>
+		      <Enemy id="police" count ="3" from ="grave"/>
+		</Round>
+		
+        <Round intermission="1">
+          <Enemy id="zombie" count ="8" from ="grave"/>
+		      <Enemy id="dog" count ="3" from ="door"/>
+		</Round>	
+		
+        <Round intermission="1">
+          <Enemy id="swat" count ="4" from ="grave"/>
+		      <Enemy id="police" count ="1" from ="door"/>
+		</Round>
+		
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		      <Enemy id="police" count ="2" from ="grave"/>
+		</Round>
+		
+        <Round intermission="2">
+          <Enemy id="boomer" count ="6" from ="grave"/>
+		      <Enemy id="police" count ="2" from ="grave"/>
+		 </Round> 
+      </Wave>
+    </Endless>
+
+    <Endless name ="Endless boss">
+      <Wave intermission="1">
+
+        <Round intermission="2">
+          <Enemy id="tank" count ="1" from ="door"/>      
+        </Round>
+
+        <Round intermission="1">
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>		
+
+        <Round intermission="1">
+          <Enemy id="swat" count ="5" from ="door"/>
+        </Round>
+	
+        <Round intermission="2">
+          <Enemy id="tank" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="2">
+		      <Enemy id="boomer" count ="5" from ="door"/>
+        </Round>		
+
+        <Round intermission="1">
+          <Enemy id="hunter" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="police" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="dog" count ="6" from ="grave"/>
+        </Round>		
+		
+      </Wave>
+    </Endless>
+    
+    <Level name ="Day 1">
+
+      <Wave intermission="1">
+
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="8" from ="door"/>
+        </Round>
+
+        <Round intermission="2">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+    <Level name ="Day 2">
+      <Wave intermission="1">
+
+        <Round intermission="2">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+
+    <Level name ="Day 3">
+      <Wave intermission="1">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="2" from ="grave"/>
+          <Enemy id="nurse" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="2" from ="grave"/>
+          <Enemy id="nurse" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="5" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 4" >
+
+      <Wave intermission="1">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="6" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="2">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="boomer " count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+    <Level name ="Day 5" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="7" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="2" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="boomer" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+
+    <Level name ="Day 6" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="8" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="7" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="3" from ="door"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+
+
+        <Round intermission="10">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+          <Enemy id="boomer" count ="3" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 7" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="nurse" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="door"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="hunter" count ="2" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 8" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+
+    <Level name ="Day 9" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="door"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="boomer" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+    <Level name ="Day 10" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="4" from ="grvae"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="tank" count ="1" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="swat" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+    <Level name ="Day 11" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 12" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="2" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="tank" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="1" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="boomer" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 13" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="swat" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="6" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="boomer" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="6" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="nurse" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="9">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 14" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="boomer" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="6" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="hunter" count ="2" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="swat" count ="4" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 15" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="swat" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="9">
+          <Enemy id="hunter" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="swat" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+
+        <Round intermission="7">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="tank" count ="1" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+
+    <Level name ="Day 16" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="boomer" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="1" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="2" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 17" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="boomer" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zoombie" count ="3" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="dog" count ="2" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="hunter" count ="1" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+
+
+    <Level name ="Day 18" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="hunter" count ="1" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="dog" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="4" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="bommer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 19" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="boomer" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="swat" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 20" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="2">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="boomer" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 21" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="swat" count ="5" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="2">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="boomer" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="tank" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 22" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="boomer" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="tank" count ="1" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="4" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="7" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 23" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="hunter" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="swat" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="door"/>
+          <Enemy id="zombie" count ="6" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombue" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 24" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="5" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="boomer" count ="1" from ="grave"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="boomer" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="boomer" count ="1" from ="grave"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombue" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="hunter" count ="1" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="garve"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="hunter" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="1" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="dog" count ="5" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 25" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="boomer" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombue" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 26" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="8" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="8" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="nurse" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="swat" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="boomer" count ="6" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="swat" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="9">
+          <Enemy id="hunter" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="swat" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="7" from ="door"/>
+		  <Enemy id="police" count ="1" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="police" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 27" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="nurse" count ="3" from ="door"/>
+		  <Enemy id="police" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="nurse" count ="2" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="boomer" count ="3" from ="door"/>
+
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="hunter" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="5" from ="door"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 28" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="boomer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="nurse" count ="4" from ="grave"/>
+          <Enemy id="swat" count ="2" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="3" from ="grave"/>
+          <Enemy id="zombie" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="boomer" count ="2" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 29" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="6" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="10">
+          <Enemy id="zombie" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="boomer" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="6" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+		  <Enemy id="police" count ="2" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="2" from ="door"/>
+		  <Enemy id="police" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="bommer" count ="2" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="nurse" count ="4" from ="door"/>
+          <Enemy id="hunter" count ="2" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="5" from ="door"/>
+		  <Enemy id="police" count ="1" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="tank" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+        </Round>
+
+
+        <Round intermission="8">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="nurse" count ="3" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="door"/>
+          <Enemy id="swat" count ="4" from ="door"/>
+        </Round>
+
+      </Wave>
+
+    </Level>
+
+    <Level name ="Day 30" >
+
+      <Wave intermission="2">
+        <Round intermission="1">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="2">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="police" count ="10" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="nurse" count ="4" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="boomer" count ="3" from ="grave"/>
+        </Round>
+
+
+        <Round intermission="6">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="boomer" count ="3" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="zombie" count ="5" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+        </Round>
+
+        <Round intermission="4">
+          <Enemy id="nurse" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="grave"/>
+		  <Enemy id="police" count ="3" from ="grave"/>
+        </Round>
+
+        <Round intermission="6">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+          <Enemy id="hunter" count ="1" from ="door"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+		  <Enemy id="police" count ="2" from ="door"/>
+        </Round>
+
+        <Round intermission="7">
+          <Enemy id="hunter" count ="1" from ="door"/>
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="police" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="zombie" count ="6" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="door"/>
+        </Round>
+
+        <Round intermission="5">
+          <Enemy id="swat" count ="3" from ="door"/>
+          <Enemy id="zombie" count ="5" from ="door"/>
+        </Round>
+
+        <Round intermission="3">
+          <Enemy id="zombie" count ="4" from ="grave"/>
+		  <Enemy id="dog" count ="3" from ="grave"/>
+		  <Enemy id="police" count ="4" from ="grave"/>
+        </Round>
+
+
+      </Wave>
+
+    </Level>
+
+
+  </EnemySpawns>
+
+
+</Config>

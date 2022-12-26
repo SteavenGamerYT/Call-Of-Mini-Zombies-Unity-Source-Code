@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1056973460263276}
+  m_IsPrefabParent: 1
+--- !u!1 &1056973460263276
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4672922712232166}
+  - component: {fileID: 114742426405226873}
+  m_Layer: 0
+  m_Name: gameresourceconfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4672922712232166
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1056973460263276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.1719546, y: -0.102394104, z: -21.109367}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114742426405226873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1056973460263276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb0d00fa6987bb43be1f0d8d90a055d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  reticle: {fileID: 2800000, guid: cbe7bce20238e73459461634983ea815, type: 3}
+  hitBlood: {fileID: 1143425831083243, guid: 8bb8be3127a897141af197930d97b22f, type: 2}
+  deadBlood: {fileID: 1882063582824003, guid: 859b837bb63296442b83c3627e1aef45, type: 2}
+  deadFoorblood: {fileID: 1591330928830818, guid: 30e384510d3f51a44bc714d83f122436, type: 2}
+  deadFoorblood2: {fileID: 1981954847070263, guid: 3856f9f5ad1fd5248936a7372297b558, type: 2}
+  hitparticles: {fileID: 1339946785967633, guid: 4d1b4df09e76a4d48865f788409d4b80, type: 2}
+  projectile: {fileID: 1591920224273025, guid: 1fb04802cf2bb0e439769517ff6a0b61, type: 2}
+  isnipertile: {fileID: 1554938095189138, guid: 2fe6b87a30a654141a1bd12966b942ac, type: 2}
+  m32tile: {fileID: 1387862344552273, guid: 86eba6d590cc43947a7047c9d56989bb, type: 2}
+  rocketExlposion: {fileID: 1522504145569424, guid: ecc11b1713c5c7f469cf0358bd3bb488, type: 2}
+  boomerExplosion: {fileID: 1215140606965999, guid: dbe5d3cf262059743a3a29f1326cce0d, type: 2}
+  shotgunfire: {fileID: 1813507747517357, guid: 8a7f1e419d8156e49a784199b590934d, type: 2}
+  rpgFloor: {fileID: 1278635542921673, guid: 76eb69172b510594397058387b15efa0, type: 2}
+  laser: {fileID: 1769736599482942, guid: 9f4c8c93c4efdaa4892fbc9275dc7f6b, type: 2}
+  laserHit: {fileID: 1403203937342008, guid: d44a8fad5bd8cde4ca99ea0440fa140f, type: 2}
+  fireline: {fileID: 1978650077552175, guid: 3199625445736a540a8f16b4d0e547db, type: 2}
+  bullets: {fileID: 1327985352012092, guid: ff0b717409d5a2f4f8673e35aee45530, type: 2}
+  shotgunBullet: {fileID: 1640182132882313, guid: a2dd2f43b431ed7479a3a98b18f5dbde, type: 2}
+  nurseSaliva: {fileID: 1445648262590352, guid: 74784d0b03d55614c8e214c1c81f692e, type: 2}
+  nurseSalivaProjectile: {fileID: 1908831050766277, guid: e7e9008e6fcab8f419ca27e24774405b, type: 2}
+  salivaExplosion: {fileID: 1068812358235268, guid: 025b16967f29d214e8c81d16085e3ef6, type: 2}
+  gunfire: {fileID: 1234202846588447, guid: db3ab371d0716f9418b193d215b4fa00, type: 2}
+  woodExplode: {fileID: 1323908930471947, guid: 9f65cbaf74af28f449bca322d41e4b29, type: 2}
+  copBomb: {fileID: 1102851406744833, guid: b7958eaf902afab468281688f00e43f7, type: 2}
+  halo: {fileID: 1535315773928879, guid: ca78f2a6eaf4018498c0b36547e25fb2, type: 2}
+  graveRock: {fileID: 1459989864909047, guid: e1bb3e08bf333714db0e089a8ca1a1da, type: 2}
+  swordAttack: {fileID: 1193963520678052, guid: 2f5d15f11ca24e04e84d1f9e17242aa7, type: 2}
+  m32spark: {fileID: 1247760705750791, guid: 3f8dd452ffe754a4c8b1e793d097a338, type: 2}
+  itemHP: {fileID: 1211478797778718, guid: 156d1d733262f384090bc8a8eb564246, type: 2}
+  itemPower: {fileID: 1454215134777157, guid: ccb4c2865b97c5e48b2f7d7e2eb777a5, type: 2}
+  itemGold: {fileID: 1891602310713425, guid: 0d321d5f34088ee40a5c3ae4dc9cc3b9, type: 2}
+  itemGold_Big: {fileID: 1606552625577328, guid: 9b43c6dd1c6b865439479b67d6b5ac82, type: 2}
+  itemAssaultGun: {fileID: 1734591653367736, guid: a223bd1552062d746a544bca024d13d3, type: 2}
+  itemShotGun: {fileID: 1422703282111370, guid: e323b70541741a840b63a94ab3039118, type: 2}
+  itemRocketLauncer: {fileID: 1571417241406225, guid: a2c3255fb7154b2429dd2dfcb90244ed, type: 2}
+  itemGatlin: {fileID: 1966652011872881, guid: 25ae399048ee0804b875fccdc47ae8dd, type: 2}
+  itemLaser: {fileID: 1286012650753363, guid: 6b3f2ce55797ca34a9f06f0fb07dd22b, type: 2}
+  itemMissle: {fileID: 1481216047967609, guid: a69533aa9f219ef46a5b1b4063d3db8d, type: 2}
+  itemM32: {fileID: 1222793974571574, guid: c97976730e69f864daa261573533b0c0, type: 2}
+  itemFire: {fileID: 1069237303875581, guid: 1dc180e582592ee438772c32a942d564, type: 2}
+  powerLogo: {fileID: 1602717591862284, guid: e96f366cdaec3e041a83ce9802c757cf, type: 2}
+  woodBoxes: {fileID: 1342223314549737, guid: d2bbe94ba157ba34695e2efd8a044268, type: 2}
+  PreyTip: {fileID: 1438150630275525, guid: 22da28208d1ea124fb7f98b73b5be45d, type: 2}
+  mucilage_S: {fileID: 1863271387570135, guid: 38905a1da64486f469f124b462f2524d, type: 2}
+  mucilage_M: {fileID: 1889791394417275, guid: 29e969e36e7273642af2785f5095f9d1, type: 2}
+  mucilage_L: {fileID: 1495003401724397, guid: 3b37fcb4997700d4e90959659451be89, type: 2}
+  foot_print: {fileID: 1088170014954053, guid: 2c9f2379ac8227f4a869d52d9c46916c, type: 2}
+  snow_explosion_eff: {fileID: 1920061417922226, guid: 6e542522a8ccf464683d04f30258a0ac, type: 2}
+  Multi_ReportData: {fileID: 1692435929786713, guid: ed1f4f02ce77b0c4496425a4723dcc14, type: 2}
