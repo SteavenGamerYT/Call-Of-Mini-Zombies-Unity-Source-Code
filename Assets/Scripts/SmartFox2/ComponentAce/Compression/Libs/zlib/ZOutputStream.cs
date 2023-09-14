@@ -5,6 +5,10 @@ namespace ComponentAce.Compression.Libs.zlib
 {
 	public class ZOutputStream : Stream
 	{
+        public override void SetLength(long length)
+        {
+            throw new NotSupportedException("SetLength method is not supported in ZOutputStream");
+        }
 		protected internal ZStream z = new ZStream();
 
 		protected internal int bufsize = 4096;
